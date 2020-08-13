@@ -1,0 +1,145 @@
+
+#parcours {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: var(--block-padding) 15%;
+}
+
+#title-parcours {
+  color: var(--red-color);
+}
+
+.mon-parcours {
+  padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.mon-parcours h3 {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+
+.parcours-title-div {
+  padding: 1rem;
+  display: inline-block;
+  background-color: var(--red-color);
+}
+
+.parcours-p-div {
+  background-color: var(--white-color);
+  padding: 1rem;
+  display: inline-block;
+}
+
+.mon-parcours {
+  display: flex;
+}
+
+.mon-parcours p {
+  color: var(--blue-color);
+  display: inline;
+}
+
+.parcours-texte {
+  flex: 1 1 60%;
+}
+
+.parcours-img {
+  flex: 1 1 40%;
+}
+
+.parcours-img img{
+  width: 12rem;
+  border-radius: 50%;
+  border: 5px solid var(--red-color);
+  display: block;
+  margin: auto;
+}
+
+#last-parcours {
+  padding-bottom: 0;
+  text-align: right;
+}
+
+#parcours .round {
+  border: .085vw solid var(--white-color);
+}
+
+#parcours .black-shownext p {
+  color: var(--white-color)
+}
+
+#parcours .black-shownext .round {
+  border: .085vw solid var(--white-color)
+}
+
+#parcours .round span {
+  background: var(--white-color);
+}
+
+#parcours .black-shownext .round span {
+  background: var(--white-color)
+}
+
+#parcours .shownext-page {
+  color: var(--white-color);
+}
+
+
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 1439px) {
+  #parcours {
+    padding: var(--block-padding) 15%;
+  }
+
+  .mon-parcours {
+    padding-bottom: 6rem;
+  }
+  
+  .parcours-texte {
+    flex: 1 1 50%;
+  }
+  
+  .parcours-img {
+    flex: 1 1 50%;
+  }
+  
+  .parcours-img img{
+    width: 15rem;
+  }
+}
+
+
+@media screen and (max-width: 1079px) {
+  .mon-parcours {
+    display: block;
+  }
+
+  .parcours-img img{
+    width: 15rem;
+  }
+
+  .parcours-texte, .parcours-img {
+    flex: 1 1 100%;
+  }
+
+  .first-parcours-bloc {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .parcours-img img{
+    width: 11.5rem;
+  }
+
+  .first-parcours-bloc {
+    margin-bottom: 2.5rem;
+  }
+}

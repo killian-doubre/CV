@@ -1,0 +1,90 @@
+#experience {
+  --space-experience: 4rem;
+}
+
+#title-experiences {
+  color: var(--blue-color);
+}
+
+.tuile-projet{
+  background-color: var(--blue-color);
+  width: 65%;
+  display: block;
+  margin: 5rem auto;
+  color: var(--white-color);
+  padding: 1.5rem 3rem;
+}
+
+.tuile-projet h3{
+  color: var(--red-color);
+  margin: var(--space-experience) 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tuile-projet img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: var(--space-experience);
+}
+
+.lien-tuile{
+  padding-bottom: var(--space-experience);
+  text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 1439px) {
+  #experience {
+    --space-experience: 3rem;
+  }
+  
+  .tuile-projet{
+    width: 75%;
+    margin: 7rem auto;
+    padding: 1.5rem 3rem;
+  }
+  
+  .tuile-projet img {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  #experience {
+    --space-experience: 1rem;
+  }
+  
+  .tuile-projet{
+    width: 90%;
+    margin: 7rem auto;
+    padding: 1.5rem 2rem;
+  }
+  
+  .tuile-projet img {
+    width: 100%;
+    padding: 3rem 0;
+  }
+}
+
+
+@media screen and (max-width: 479px) {
+  #experience {
+    --space-experience: 1rem;
+  }
+  
+  .tuile-projet{
+    width: 95%;
+    margin: 3rem auto;
+    padding: 1.5rem 1rem;
+  }
+  
+  .tuile-projet img {
+    width: 100%;
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,161 @@
+header {
+  --h1-font-size: 3rem;
+  --h1-letter-space: 1rem;
+  --h1-line-space: 4rem;
+  --h1-padding-top: 7rem;
+
+  --header-p-letter-spacing: 0.13rem;
+  --header-p-line-height: 2rem;
+  --header-p-padding-top: 7rem;
+
+  margin-top: var(--nav-height);
+  position: relative;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  letter-spacing: var(--h1-letter-space);
+  line-height: var(--h1-line-space);
+  padding-top: var(--h1-padding-top)
+}
+
+#profile-picture {
+  position: absolute;
+  width: 15rem;
+  left: 10rem;
+  border-radius: 50%;
+  border: 6px solid var(--blue-color);
+}
+
+#header-p {
+  text-align: center;
+  color: var(--red-color);
+  letter-spacing: var(--header-p-letter-spacing);
+  line-height: var(--header-p-line-height);
+  padding-top: var(--header-p-padding-top);
+}
+
+nav {
+  height: var(--nav-height);
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  align-items: center;
+  padding: var(--nav-padding);
+  background-color: rgb(245,245,245);
+  z-index: 2;
+}
+
+nav h4 {
+  flex: 1 1 60%;
+  font-size: var(--nav-font-size);
+  font-weight: bold;
+}
+
+nav > ul {
+  display: flex;
+  flex: 1 1 40%;
+}
+
+nav > ul > li {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#responsive-menu {
+  flex: 1 1 30%;
+  display: none;
+  padding: 0.5rem
+}
+
+
+
+
+
+
+@media screen and (min-width: 1440px) and (max-width: 1745px) {
+  #profile-picture {
+    width: 13rem;
+    left: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1080px) and (max-width: 1439px) {
+  header {
+    --h1-padding-top: 4rem;
+  
+    --header-p-padding-top: 5rem;
+  }
+  
+  #profile-picture {
+    width: 10rem;
+    left: 3rem;
+    top: 15rem;
+  }
+  
+  nav h4 {
+    flex: 1 1 50%;
+  }
+  
+  nav > ul {
+    flex: 1 1 50%;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  #profile-picture {
+    position: static;
+    display: block;
+    margin: 4rem auto 0 auto;
+    width: 15rem;
+  }
+}
+
+
+@media screen and (max-width: 1079px) {
+  nav > ul {
+    display: none;
+  }
+
+  #responsive-menu {
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 1079px) {
+  header {
+    --h1-padding-top: 2rem;
+    --h1-font-size: 2.8rem;
+    --h1-letter-space: 0.8rem;
+    --h1-line-space: 3rem;
+  
+    --header-p-padding-top: 4rem;
+  }
+  
+  #profile-picture {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 759px) {
+  header {
+    --h1-padding-top: 2rem;
+    --h1-font-size: 2.2rem;
+    --h1-letter-space: 0.5rem;
+    --h1-line-space: 2.5rem;
+  
+    --header-p-padding-top: 3.5rem;
+  }
+  
+  #profile-picture {
+    width: 18rem;
+  }
+}

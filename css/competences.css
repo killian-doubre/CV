@@ -1,0 +1,45 @@
+#competences{
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+#title-competences {
+  color: var(--blue-color);
+}
+
+#mini-block-competence {
+  background-color: var(--blue-color);
+  padding: 5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mini-block-competence p:not(:last-child){
+  padding-bottom: 3rem;
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1079px) {
+  
+  #mini-block-competence {
+    padding: 2.5rem;
+    width: 95%;
+  }
+  
+  #mini-block-competence p:not(:last-child){
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  
+  #mini-block-competence {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  #mini-block-competence p:not(:last-child){
+    padding-bottom: 4.5rem;
+  }
+}
