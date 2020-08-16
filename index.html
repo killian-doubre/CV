@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/parcours.css">
-  <link rel="stylesheet" href="/css/competences.css">
-  <link rel="stylesheet" href="/css/experiences.css">
-  <link rel="stylesheet" href="/css/apropos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/parcours.css">
+  <link rel="stylesheet" href="css/competences.css">
+  <link rel="stylesheet" href="css/experiences.css">
+  <link rel="stylesheet" href="css/apropos.css">
   <title>Killian DOUBRE - CV Web - Étudiant Développeur Web</title>
   <meta name="description" content="Découvrez mon profil d'étudiant en apprentissage du métier de développeur web, mes compétences et mes travaux via mon CV Web !" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
@@ -25,21 +25,21 @@
   <nav>
     <h4><a href="#header" title="Accueil" >KD</a></h4>
     <ul>
-      <li><a href="/#parcours" title="Mon parcours" >Parcours</a></li>
-      <li><a href="/#competences" title="Mes compétences" >Compétences</a></li>
-      <li><a href="/#experience" title="Mes projets" >Projets</a></li>
-      <li><a href="/#footer" title="À propos" >À propos</a></li>
+      <li><a href="#parcours" title="Mon parcours" >Parcours</a></li>
+      <li><a href="#competences" title="Mes compétences" >Compétences</a></li>
+      <li><a href="#experience" title="Mes projets" >Projets</a></li>
+      <li><a href="#footer" title="À propos" >À propos</a></li>
     </ul>
     <select id="responsive-menu" onchange="location=this.value;">
-      <option value="/#parcours"><span>Parcours</span></option>
-      <option value="/#competences"><span>Compétences</span></option>
-      <option value="/#experience"><span>Projets</span></option>
-      <option value="/#footer"><span>À propos</span></option>
+      <option value="#parcours"><span>Parcours</span></option>
+      <option value="#competences"><span>Compétences</span></option>
+      <option value="#experience"><span>Projets</span></option>
+      <option value="#footer"><span>À propos</span></option>
   </select>
   </nav>
   <header class="big-block" id="header">
     <h1>Killian DOUBRE<br>Développeur Web</h1>
-    <img id="profile-picture" src="/img/portrait.jpg" alt="">
+    <img id="profile-picture" src="img/portrait.jpg" alt="">
     <p id="header-p">Passionné d'informatique depuis mon adolescence, j'ai poursuivi mes études dans le développement web.<br/>
       Actuellement diplomé du DUT Métiers du Multimédia et de l'Internet (DUT MMI) de Toulon, je me forme via mes cours,<br/> mais également extra-scolairement sur des plateformes d'enseignement en ligne et via des projets personnels<br/>
       aux compétences nécessaires pour devenir Développeur Web Full Stack.<br/>
@@ -47,7 +47,7 @@
     <div class="shownext-page">
       <p class="title-next-page">Mon parcours :</p>
       <div class="center-con">
-        <a href="/#parcours" title="Découvrez mon parcours scolaire">
+        <a href="#parcours" title="Découvrez mon parcours scolaire">
           <div class="round">
             <span></span>
             <span></span>
@@ -67,12 +67,12 @@
             Une fois mon diplôme en poche, je m'étais alors d'abord dirigé vers un DUT Génie Biologique.<br/></p></div>
         </div>
         <div class="parcours-img">
-          <img src="/img/lycée-agricole.jpg" alt="Lycée Agricole de Hyères">
+          <img src="img/lycée-agricole.jpg" alt="Lycée Agricole de Hyères">
         </div>
       </div>
       <div class="mon-parcours" id="last-parcours">
         <div class="parcours-img first-parcours-bloc">
-          <img src="/img/iut-toulon-mmi.jpg" alt="IUT MMI de Toulon">
+          <img src="img/iut-toulon-mmi.jpg" alt="IUT MMI de Toulon">
         </div>
         <div class="parcours-texte">
           <div class="parcours-title-div"><h3>DUT MMI - Arles / Toulon - 2017/2019</h3></div>
@@ -85,7 +85,7 @@
       <div class="shownext-page">
         <p class="title-next-page">Mes compétences :</p>
         <div class="center-con">
-          <a href="/#competences" title="Découvrez mes compétences">
+          <a href="#competences" title="Découvrez mes compétences">
             <div class="round">
               <span></span>
               <span></span>
@@ -114,7 +114,7 @@
       <div class="shownext-page">
         <p class="title-next-page">Mes expériences :</p>
         <div class="center-con">
-          <a href="/#experience" title="Découvrez mes projets en développement web">
+          <a href="#experience" title="Découvrez mes projets en développement web">
             <div class="round">
               <span></span>
               <span></span>
@@ -127,18 +127,18 @@
     <div class="big-block" id="experience">
       <h2 class="big-block-title" id="title-experiences">Mes expériences :</h2>
       <div class="tuile-projet"><h3>Premier projet Cinénews</h3><p>Ce fût mon premier projet de création de site web de première année de l'IUT MMI. Le but était simplement de créer un site web multipages classique présentant des films comme un cinéma, sans base de données et sans responsive design.</p>
-      <img src="/img/cinema-site.jpg" alt="Premier projet site web présentation de films"></div>
+      <img src="img/cinema-site.jpg" alt="Premier projet site web présentation de films"></div>
       <div class="tuile-projet"><h3>Stage de première année</h3><p>Lors de mon stage de première année, j'ai beaucoup utilisé HTML/CSS pour corriger des erreurs de positionnement sur des pages web, en utilisant les maquettes qu'on me fournissait. J'ai également participé à la création de pages et de contenu sur des sites utilisant Wordpress. Enfin, j'ai dû créer entièrement une petite page web d'attente pour un client, en attendant la mise en ligne de son site définitif, avec un décompte.</p>
-      <img src="/img/travail1-gabyprimdistrib.jpg" alt="Projet premier stage page web d'attente">
+      <img src="img/travail1-gabyprimdistrib.jpg" alt="Projet premier stage page web d'attente">
       <div class="lien-tuile"><a class="lien-site" href="http://www.gabyprimdistrib.com/" title="">Lien site</a></div></div>
       <div class="tuile-projet"><h3>Premier CV Web</h3><p>Voici le premier CV Web que j'avais créé afin de prospecter pour mon stage de deuxième année. C'est une single page avec des scripts JS, le bouton de droite permettant de naviguer rapidement à travers les 5 blocs du site. Le site utilise du PHP pour la gestion d'envoi de mails via la partie Contact. Le code est consultable sur le lien github en dessous de l'image.</p>
-      <img src="/img/premier-cv.jpg" alt="Premier CV au format web">
+      <img src="img/premier-cv.jpg" alt="Premier CV au format web">
       <div class="lien-tuile"><a class="lien-site" href="https://github.com/Freezeraid/PremierCV" title="Premier CV Web">Lien site</a></div></div>
       <div class="tuile-projet"><h3>Stage de deuxième année</h3><p>Pour mon stage de deuxième année, j'ai du concevoir un site web pour un ehpad, en commençant par le design, le développement et l'intégration, puis en terminant par le référencement et l'optimisation des performances de celui-ci. Malheureusement, l'administrateur réseau du site n'a pas renouvelé l'hébergement du site, j'ai donc hebergé le code de celui-ci sur github afin que vous puissiez le consulter.</p>
-      <img src="/img/andreblanc.jpg" alt="Site créé pour l'EHPAD André Blanc lors de mon deuxième stage">
+      <img src="img/andreblanc.jpg" alt="Site créé pour l'EHPAD André Blanc lors de mon deuxième stage">
       <div class="lien-tuile"><a class="lien-site" href="https://github.com/Freezeraid/EhpadAndreBlanc" title="Projet site web pour l'EHPAD Andre Blanc">Lien site</a></div></div>
       <div class="tuile-projet"><h3>Projet Nice 2220</h3><p>J'ai créé ce site pour un projet universitaire d'un ami. Celui-ci avait besoin d'un site statique et multi pages. Apprenant dans le même temps le javascript, j'en ai profité pour créer des scripts à la main sur ce projet, afin de m'exercer. Il n'y a aucun responsive design sur ce projet.</p>
-      <img src="/img/nice2220.jpg" alt="Site web créé pour un projet universitaire">
+      <img src="img/nice2220.jpg" alt="Site web créé pour un projet universitaire">
       <div class="lien-tuile"><a class="lien-site" href="https://txtim.github.io/" title="Site web Projet Nice 2220">Lien site</a></div></div>
     </div>
   </main>
